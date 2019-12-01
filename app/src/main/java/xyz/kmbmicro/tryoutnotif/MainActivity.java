@@ -41,11 +41,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * Create and show a simple notification containing the received FCM message.
-     *
-     * @param messageBody FCM message body received.
-     */
     private void sendNotification(String messageBody) {
         Intent intent = new Intent(this, MainActivity.class);//**The activity that you want to open when the notification is clicked
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
